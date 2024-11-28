@@ -1,0 +1,40 @@
+script_key="put key here!";
+getgenv()['pivot.net'] = {
+    ['Target_Aim'] = {
+        ['Keybind'] = Enum.KeyCode.Q,
+        ['Prediction'] = 0.1213234923828338,
+        ['Aim_Part'] = "UpperTorso",
+        ['Jump_Offset'] = 0.06 
+    },
+    ['Camlock'] = {
+        ['Prediction'] = 14.93,
+        ['Aim_Part'] = "UpperTorso",
+        ['Air_Part'] = "Head",
+        ['Keybind'] = Enum.KeyCode.C,
+        ['Smoothnes'] = 1,
+        ['Shake'] = 0, 
+        ['Jump_Offset'] = 0.06,
+        ['Specific_Range'] = {
+            ['Close'] = 14.93,
+            ['Mid'] = 14.93,
+            ['Far'] = 14.93
+        }
+    },
+    ['Notifications'] = {
+        ['Enabled'] = true,
+        ['Locked_Msg'] = "Locked onto:",
+        ['Unlocked_Msg'] = "Unlocked"
+    },
+    ['Resolver'] = {
+        ['Active'] = false,
+        ['Keybind'] = Enum.KeyCode.G, 
+        ['Mode'] = "MoveDirection" 
+    },
+    ['Highlights'] = {
+        ['Enabled'] = true,
+        ['Fill_Color'] = Color3.fromRGB(255, 255, 255), 
+        ['Outline_Color'] = Color3.fromRGB(0, 0, 0)
+    }
+}
+
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/a4ea2f887be6d3c0cc14e4d918d26a76.lua"))()
