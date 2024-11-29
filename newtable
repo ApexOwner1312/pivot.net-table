@@ -2,27 +2,27 @@ script_key="put key here!";
 getgenv()['pivot.net'] = {
     ['Target_Aim'] = {
         ['Keybind'] = Enum.KeyCode.Q,
-        ['Prediction'] = 0.1213234923828338,
+        ['Prediction'] = 0.121833823,
         ['Aim_Part'] = "UpperTorso",
         ['Jump_Offset'] = 0.06 
     },
     ['Camlock'] = {
         ['Prediction'] = 14.93,
         ['Aim_Part'] = "UpperTorso",
-        ['Air_Part'] = "Head",
+        ['Air_Part'] = "UpperTorso",
         ['Keybind'] = Enum.KeyCode.C,
         ['Smoothnes'] = 1,
         ['Shake'] = 0, 
         ['Jump_Offset'] = 0.06,
         ['Specific_Range'] = {
             ['Close'] = 14.93,
-            ['Mid'] = 14.93,
-            ['Far'] = 14.93
+            ['Mid'] = 9.8,
+            ['Far'] = 7.44
         }
     },
     ['Notifications'] = {
         ['Enabled'] = true,
-        ['Locked_Msg'] = "Locked onto:",
+        ['Locked_Msg'] = "Locked onto: ",
         ['Unlocked_Msg'] = "Unlocked"
     },
     ['Resolver'] = {
@@ -34,6 +34,13 @@ getgenv()['pivot.net'] = {
         ['Enabled'] = true,
         ['Fill_Color'] = Color3.fromRGB(255, 255, 255), 
         ['Outline_Color'] = Color3.fromRGB(0, 0, 0)
+    },
+    ['NoSlowDown'] = {
+        ['Enable'] = true,
+        ['Normal_Speed'] = 16
+    },
+    ['NoJumpCooldown'] = {
+        ['Enabled'] = true
     }
 }
 
